@@ -1,0 +1,77 @@
+## mako
+<%!
+  from django.core.urlresolvers import reverse
+  from django.utils.translation import ugettext as _
+%>
+<%namespace name='static' file='/static_content.html'/>
+<%inherit file="/main.html" />
+
+
+
+
+<%block name="title"><title>${_('About')}</title></%block>
+
+<section class="static-container about">
+
+   
+        <h1>${_('About')}</h1>
+
+        <p style="text-align:justify;text-indent:25px;">Современная тенденция дистанционного образования – это массовые открытые онлайн курсы (МООК).
+ 
+Казахский национальный университет им. аль-Фараби является лидером среди казахстанских университетов по внедрению MOOК на открытой платформе Open edX. 
+ 
+С 2014-2015 учебного года Центр массовых открытых онлайн курсов Института новых образовательных технологий КазНУ им. аль-Фараби совместно с профессорско-преподавательским составом начал работу по созданию МООК, и в данный момент по Интернет адресу http://open.kaznu.kz функционирует собственная МООК платформа на основе системы Open edX. 
+ 
+1 октября 2015 года были запущены первые открытые курсы от ведущих преподавателей КазНУ имени аль-Фараби – «Теория вероятностей» и «Физические задачи с доцентом В. Кашкаровым», куда записались около 250 и 500 слушателей из разных регионов Казахстана, соответственно. В этих курсах в основном обучались учащиеся 1-2 курса КазНУ, старших классов Назарбаев интеллектуальных школ, специализированных физико-математических и средних школ. Анализ данных показал большой интерес к этим курсам, что дает стимул преподавательскому составу и сотрудникам университета продолжать работу в этом направлении. На конец июня 2016 года в системе зарегистрировано более 2 тысяч слушателей.</p>
+
+        <p>&nbsp;</p>
+
+  </section>
+
+<div class="container">
+           <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Наша команда</h1>
+                </div>
+          </div>
+          <div class="row text-centred">
+                <div class="col-md-3">
+                    <div class="team-member">
+                        <span>
+                        <img class="img-circle"  src="${static.url("schools/img/a.ermek.jpg")}" >
+                        </span>
+                        <h4>Алимжанов Ермек</h4>
+                        <p class="img-circle">Директор института новых образовательных технологий</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="team-member">
+                        <span>
+                        <img class="img-circle"  src="${static.url("schools/img/azat.jpg")}">
+                        </span>
+                        <h4>Абсадык Азат</h4>
+                       <p class="text-centred">Директор центра массовых открытых онлайн курсов</p>
+                     </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="team-member">
+                       <span>
+                       <img class="img-circle"  src="${static.url("schools/img/sungat.jpg")}" >
+                       </span>
+                        <h4>Сериков Сунгат</h4>
+                        <p class="text-centred">Технический сотрудник центра массовых открытых онлайн курсов</p>
+                     </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="team-member">
+                        <span>
+                        <img class="img-circle"  src="${static.url("schools/img/aidar.jpg")}">
+                        </span>
+                        <h4>Курдыбаев Айдар</h4>
+  <p class="text-centred">Оператор, монтажер центра массовых открытых онлайн курсов</p>
+                    </div>
+                </div>
+            </div>
+</div>
+</div>
+
